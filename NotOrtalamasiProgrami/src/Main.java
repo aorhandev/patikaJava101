@@ -25,9 +25,13 @@ public class Main {
         turkce = input.nextInt();
 
         int toplam = mat + fizik + kimya + turkce + tarih + muzik;
-        double sonuc = toplam/6.0;
+        double sonuc = toplam / 6.0;
 
         System.out.println("Ortalamanız: " + sonuc);
+
+        String durum = sonuc >= 60 ? "Geçti" : "Kaldı";
+
+        System.out.println("Durum: " + durum);
 
     }
 }
