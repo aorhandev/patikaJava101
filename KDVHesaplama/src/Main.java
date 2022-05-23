@@ -10,7 +10,7 @@ public class Main {
 
         System.out.print("Tutarı giriniz: ");
 
-        tutar = scanner.nextInt();
+        tutar = scanner.nextDouble();
 
         if (tutar <= 1000) {
             kdv = 1.18;
@@ -18,7 +18,7 @@ public class Main {
             kdv = 1.08;
         }
 
-        double sonuc = tutar * kdv ;
+        double sonuc = tutar * kdv;
 
         System.out.println("KDV'siz Fiyat= " + tutar);
         System.out.println("KDV'li Fiyat= " + sonuc);
